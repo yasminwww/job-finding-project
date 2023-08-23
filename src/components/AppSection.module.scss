@@ -1,0 +1,21 @@
+@import "../App.scss";
+
+.AppSectionContainer {
+  margin: 120px 0 120px 0;
+  display: flex;
+  gap: 68px;
+  align-items: center;
+
+  .AppSection,
+  .AppSectionInfo {
+    width: 50%;
+  }
+
+  .AppSectionInfo {}
+
+  .AppSectionImage {
+    width: 100%;
+    height: auto;
+
+  }
+}

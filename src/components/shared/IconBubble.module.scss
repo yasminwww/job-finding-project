@@ -1,0 +1,12 @@
+@import '../../App.scss';
+
+.IconBubbleBox {
+  height: 48px;
+  width: 48px;
+  color: $white;
+  background-color: $dark-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}

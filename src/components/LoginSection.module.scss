@@ -1,0 +1,66 @@
+@import "../App.scss";
+
+
+.LoginSectionContainer {
+  .Phone {
+    position: relative;
+    width: 280px;
+    height: 420px;
+    background-color: #c8e8da;
+    border-radius: 20px;
+
+    .LoginCard {
+      position: absolute;
+      top: 40px;
+      left: -140px;
+      width: 280px;
+      padding: 42px;
+      background-color: $white;
+      border-radius: 10px;
+      box-shadow: -22px 24px 58px -18px rgba(0, 0, 0, 0.19);
+
+      .LoginInputContainer {
+        display: flex;
+        width: 100%;
+        gap: 10px;
+
+        .LoginInput {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 16px;
+          width: 100%;
+
+          input {
+            max-width: 100%;
+            height: 20px;
+            padding: 8px;
+            border: 1px solid $dark-color;
+            border-radius: 5px;
+          }
+
+
+          .LoginActions {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 18px;
+
+          }
+        }
+
+        svg {
+          transition: all 0.3s ease-in-out;
+          position: relative;
+          top: 10px;
+
+          &:hover {
+            fill: #084941;
+          }
+        }
+      }
+
+    }
+  }
+}

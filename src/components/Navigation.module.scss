@@ -1,0 +1,29 @@
+@import "../App.scss";
+
+.NavContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 50px 24px 50px;
+  align-items: center;
+  background-color: $sand-color;
+
+  .NavItems {
+    display: flex;
+    list-style-type: none;
+    gap: 24px;
+    font-weight: 900;
+    align-items: center;
+    cursor: pointer;
+
+    a {
+
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: #084941;
+      }
+    }
+
+
+  }
+}

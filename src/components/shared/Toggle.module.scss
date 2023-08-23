@@ -1,0 +1,38 @@
+/* Toggle.module.css */
+
+@import "../../App.scss";
+
+.toggleContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  .toggleSwitch {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 21px;
+    border: 1px solid $dark-color;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  .slider {
+    position: absolute;
+    top: 3px;
+    width: 15px;
+    height: 15px;
+    background-color: $dark-color;
+    border-radius: 50%;
+    transition: left 0.4s;
+  }
+
+  .sliderOn {
+    left: 23px;
+    background-color: $green;
+  }
+
+  .sliderOff {
+    left: 4px;
+  }
+}

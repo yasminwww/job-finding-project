@@ -22,7 +22,7 @@ const Toggle = ({ label }: ToggleProps) => {
           }`}
         ></div>
       </div>
-      {label && <Text text={label} size="11" />}
+      {label && <Text text={label} size="tiny" />}
     </div>
   );
 };

@@ -6,7 +6,7 @@ import Button from "./shared/Button";
 const Navigation = () => {
   return (
     <nav className={styles.NavContainer}>
-      <div className={styles.NavItems}>
+      <div className={styles.NavIcon}>
         <img
           width="48"
           height="48"
@@ -15,7 +15,7 @@ const Navigation = () => {
         />
         <div>Ramason</div>
       </div>
-      <div className={styles.NavItems}>
+      <div className={styles.NavLinks}>
         <Link to="#home" spy={true} smooth={true} offset={50} duration={500}>
           Home
         </Link>
@@ -50,9 +50,7 @@ const Navigation = () => {
           Career Advice
         </Link>
       </div>
-      <div>
-        <Button label="Register Now" onClick={() => {}} />
-      </div>
+      <Button label="Register Now" onClick={() => {}} dark />
     </nav>
   );
 };

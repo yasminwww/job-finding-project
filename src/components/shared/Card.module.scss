@@ -1,0 +1,38 @@
+@import "../../App.scss";
+
+.Category {
+  padding: 16px;
+  border: 2px solid $dark-color;
+  border-radius: 6px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $white;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  &Row {
+    display: flex;
+    align-items: center;
+    max-width: 450px;
+    border: 1px solid $dark-color;
+    gap: 16px;
+    border-radius: 6px;
+    padding: 12px;
+    transition: all 0.5s ease-in-out;
+    justify-content: space-between;
+
+    &:hover {
+      background-color: $green;
+      cursor: pointer;
+    }
+  }
+  &:hover {
+    background-color: $green;
+    cursor: pointer;
+  }
+}
+.CategoryRow:not(:first-child) {
+  margin-top: 8px;
+}

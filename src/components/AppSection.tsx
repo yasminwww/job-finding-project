@@ -17,7 +17,6 @@ const AppSection = () => {
       <div className={styles.AppSectionInfo}>
         <Text
           text="GET YOUR JOB TODAY FIND THE JOBS YOU LOVE"
-          size="32"
           type="h2"
           bold
         />

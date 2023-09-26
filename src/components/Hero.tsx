@@ -2,9 +2,7 @@ import * as React from "react";
 import SearchInput from "./SearchInput";
 import styles from "./Hero.module.scss";
 
-export interface HeroProps {}
-
-const Hero = ({}: HeroProps) => {
+const Hero = () => {
   return (
     <div className={styles.HeroContainer}>
       <section className={styles.HeroText}>

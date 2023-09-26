@@ -1,10 +1,9 @@
 @import "../App.scss";
 
-
 .LoginSectionContainer {
   .Phone {
     position: relative;
-    width: 280px;
+    width: 230px;
     height: 420px;
     background-color: #c8e8da;
     border-radius: 20px;
@@ -13,8 +12,8 @@
       position: absolute;
       top: 40px;
       left: -140px;
-      width: 280px;
-      padding: 42px;
+      width: 230px;
+      padding: 32px;
       background-color: $white;
       border-radius: 10px;
       box-shadow: -22px 24px 58px -18px rgba(0, 0, 0, 0.19);
@@ -37,8 +36,8 @@
             padding: 8px;
             border: 1px solid $dark-color;
             border-radius: 5px;
+            font-size: 16px;
           }
-
 
           .LoginActions {
             display: flex;
@@ -46,7 +45,6 @@
             width: 100%;
             margin-top: 10px;
             margin-bottom: 18px;
-
           }
         }
 
@@ -60,7 +58,6 @@
           }
         }
       }
-
     }
   }
 }

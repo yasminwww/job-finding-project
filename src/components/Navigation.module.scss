@@ -5,25 +5,31 @@
   justify-content: space-between;
   padding: 24px 50px 24px 50px;
   align-items: center;
-  background-color: $sand-color;
+  background-color: $sand;
 
-  .NavItems {
+  @mixin NavItems {
     display: flex;
     list-style-type: none;
-    gap: 24px;
     font-weight: 900;
     align-items: center;
     cursor: pointer;
+  }
+
+  .NavIcon {
+    @include NavItems;
+    gap: 16px;
+  }
+
+  .NavLinks {
+    @include NavItems;
+    gap: 38px;
 
     a {
-
-      transition: all 0.3s ease-in-out;
+      transition: all 0.2s ease-in-out;
 
       &:hover {
-        color: #084941;
+        filter: brightness(3);
       }
     }
-
-
   }
 }

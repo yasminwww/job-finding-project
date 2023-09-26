@@ -1,10 +1,8 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import styles from "./IconBubble.module.scss";
-import { Icon } from "@mui/material";
-import DesignServicesRoundedIcon from "@mui/icons-material/DesignServicesRounded";
 
 interface IconBubbleProps {
-  icon: any;
+  icon: ReactNode;
 }
 
 const IconBubble = ({ icon }: IconBubbleProps) => {

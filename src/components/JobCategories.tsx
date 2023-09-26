@@ -1,5 +1,4 @@
 import React from "react";
-import Category from "./shared/Category";
 import DesignServicesRoundedIcon from "@mui/icons-material/DesignServicesRounded";
 import LaptopChromebookRoundedIcon from "@mui/icons-material/LaptopChromebookRounded";
 import DomainVerificationRoundedIcon from "@mui/icons-material/DomainVerificationRounded";
@@ -8,6 +7,7 @@ import WebRoundedIcon from "@mui/icons-material/WebRounded";
 import AdUnitsRoundedIcon from "@mui/icons-material/AdUnitsRounded";
 import Text from "./shared/Text";
 import styles from "./JobCategories.module.scss";
+import Card from "./shared/Card";
 
 const JobCategories = () => {
   const subtext = (jobType: string) =>
@@ -48,12 +48,12 @@ const JobCategories = () => {
   return (
     <div className={styles.JobCategoriesContainer}>
       <div className={styles.JobCategoriesIntro}>
-        <Text text="JOB CATEGORY" size="24" type="h2" bold />
+        <Text text="JOB CATEGORY" type="h2" bold />
         <Text text="Finding a job should not be a full-time endeavor. Tell us what you're searching for, and we'll find you a job." />
       </div>
       <div className={styles.JobCategories}>
         {categories.map((item) => (
-          <Category data={item} />
+          <Card data={item} />
         ))}
       </div>
     </div>

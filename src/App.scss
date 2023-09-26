@@ -1,20 +1,33 @@
- $sand-color: #fbf0ed;
- $dark-color: #03221b;
- $light-color: #829e98;
- $green: #00a056;
- $white: #ffffff;
+$dark-color: #03221b;
+$light-color: #829e98;
+$green: #00a056;
+$white: #ffffff;
+$sand: #fbf0ec;
 
- body {
-   margin: 0;
-   color: #011f19;
-   font-family: 'Lato', sans-serif;
+body {
+  margin: 0;
+  color: #011f19;
+  font-family: "Lato", sans-serif;
 
-   .main-content {
-     margin: 0 auto;
+  .main-content {
+    margin: 0 auto;
 
-     .content {
-       max-width: 900px;
-       margin: 0 auto;
-     }
-   }
- }
+    .content {
+      max-width: 900px;
+      margin: 0 auto;
+      .actions-section {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 890px) {
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          left: auto;
+          transform: none;
+          gap: 34px;
+        }
+      }
+    }
+  }
+}

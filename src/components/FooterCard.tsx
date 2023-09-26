@@ -11,7 +11,7 @@ interface FooterCardProps {
 const FooterCard = ({ title, label, link }: FooterCardProps) => {
   return (
     <div className={styles.FooterCard}>
-      <Text text="" size="34"></Text>
+      <Text text="" type="h2"></Text>
     </div>
   );
 };

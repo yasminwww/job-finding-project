@@ -1,0 +1,10 @@
+@import "../App.scss";
+
+.PromotionSection {
+  margin-top: 260px;
+  background-color: $sand;
+  .PromotionContent {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}

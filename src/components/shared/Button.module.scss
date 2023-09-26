@@ -1,7 +1,6 @@
-@import '../../App.scss';
+@import "../../App.scss";
 
 .Button {
-  background-color: $green;
   display: inline-block;
   outline: none;
   cursor: pointer;
@@ -16,8 +15,12 @@
   border: none;
   color: #fff;
   transition: all 0.4s ease-in-out;
+  background-color: $green;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 
   &:hover {
-    background-color: #008949;
+    filter: brightness(1.1);
   }
 }

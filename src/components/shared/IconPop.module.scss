@@ -1,0 +1,12 @@
+@import "../../App.scss";
+
+.IconPop {
+  height: 28px;
+  width: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
+  background-color: white;
+}

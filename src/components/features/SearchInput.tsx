@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./SearchInput.module.scss";
-import Button from "./design-components/Button";
+import Button from "../design-components/Button";
 
 type Props = {};
 

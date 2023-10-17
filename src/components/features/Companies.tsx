@@ -7,7 +7,7 @@ import prudential from "../assets/images/companies/Prudential-modified.png";
 import google from "../assets/images/companies/Google_2015_logo.svg-modified.png";
 import microsoft from "../assets/images/companies/Microsoft_logo_(2012).svg-modified.png";
 import zoover from "../assets/images/companies/Zoover-logo-2021_RGB-pos-modified.png";
-import Text from "./design-components/Text";
+import Text from "../design-components/Text";
 import thousand from "../assets/images/thousand.png";
 
 const Companies = () => {

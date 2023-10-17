@@ -5,9 +5,9 @@ import DomainVerificationRoundedIcon from "@mui/icons-material/DomainVerificatio
 import CampaignRoundedIcon from "@mui/icons-material/CampaignRounded";
 import WebRoundedIcon from "@mui/icons-material/WebRounded";
 import AdUnitsRoundedIcon from "@mui/icons-material/AdUnitsRounded";
-import Text from "./design-components/Text";
+import Text from "../design-components/Text";
 import styles from "./JobCategories.module.scss";
-import Card from "./design-components/Card";
+import Card from "../design-components/Card";
 
 const JobCategories = () => {
   const subtext = (jobType: string) =>

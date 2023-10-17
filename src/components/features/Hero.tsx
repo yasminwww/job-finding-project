@@ -1,7 +1,7 @@
 import * as React from "react";
 import SearchInput from "./SearchInput";
 import styles from "./Hero.module.scss";
-import Text from "./design-components/Text";
+import Text from "../design-components/Text";
 
 const Hero = () => {
   return (

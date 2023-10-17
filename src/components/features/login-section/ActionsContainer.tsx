@@ -2,7 +2,7 @@ import React from "react";
 import NearMeRoundedIcon from "@mui/icons-material/NearMeRounded";
 import BoltRoundedIcon from "@mui/icons-material/BoltRounded";
 import styles from "./ActionsContainer.module.scss";
-import Card from "../design-components/Card";
+import Card from "../../design-components/Card";
 
 const ActionsContainer = () => {
   const actions = [

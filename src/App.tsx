@@ -1,12 +1,12 @@
 import "./App.scss";
-import ActionsContainer from "./components/features/ActionsContainer";
-import AppSection from "./components/features/AppSection";
+import ActionsContainer from "./components/features/login-section/ActionsContainer";
+import AppSection from "./components/features/login-section/AppSection";
 import Footer from "./components/features/Footer";
 import Hero from "./components/features/Hero";
 import JobCategories from "./components/features/JobCategories";
-import LoginContainer from "./components/features/LoginContainer";
+import LoginContainer from "./components/features/login-section/LoginContainer";
 import Navigation from "./components/features/Navigation";
-import PromotionSection from "./components/features/PromotionSection";
+import PromotionSection from "./components/features/promotion-section/PromotionSection";
 
 function App() {
   return (

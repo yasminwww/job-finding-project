@@ -1,8 +1,7 @@
-@import "../App.scss";
+@import "../../App.scss";
 
 .FooterContainer {
   padding: 38px 80px 28px 80px;
-
   .FooterCards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));

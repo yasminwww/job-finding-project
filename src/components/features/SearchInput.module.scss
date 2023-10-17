@@ -1,4 +1,4 @@
-@import "../App.scss";
+@import "../../App.scss";
 
 .SearchInputContainer {
   padding: 8px;
@@ -10,13 +10,11 @@
   box-shadow: 1px 16px 28px 12px rgba(0, 0, 0, 0.11);
   -webkit-box-shadow: 1px 16px 28px 12px rgba(0, 0, 0, 0.11);
   -moz-box-shadow: 1px 16px 28px 12px rgba(0, 0, 0, 0.11);
-
   .SearchInputItems {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 16px;
-
     .SearchInputItem {
       .Input {
         border-color: $white !important;
@@ -25,7 +23,6 @@
         width: 100%;
         font-size: 16px;
         outline: none;
-
         &:focus {
           border-color: $white !important;
         }

@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./AppSection.module.scss";
-import notifications from "../assets/images/notifications.png";
-import Text from "../design-components/Text";
-import Button from "../design-components/Button";
+import notifications from "../../../assets/images/notifications.png";
+import Text from "../../design-components/Text";
+import Button from "../../design-components/Button";
 
 const AppSection = () => {
   return (

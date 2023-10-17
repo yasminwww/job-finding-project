@@ -1,19 +1,16 @@
-@import "../App.scss";
+@import "../../App.scss";
 
 .HeroContainer {
   margin: 0 auto;
   padding: 42px 0 42px 0;
   background-color: $sand;
   margin-top: 120px;
-
   .HeroText {
     font-size: 32px;
   }
-
   .HeroText,
   .HeroSubText {
     text-align: center;
-
     h1 {
       margin: 0 !important;
     }

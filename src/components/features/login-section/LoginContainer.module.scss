@@ -1,4 +1,4 @@
-@import "../App.scss";
+@import "../../../App.scss";
 
 .LoginSectionContainer {
   .Phone {
@@ -17,6 +17,22 @@
       background-color: $white;
       border-radius: 10px;
       box-shadow: -22px 24px 58px -18px rgba(0, 0, 0, 0.19);
+      .LoginAvatar {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 16px;
+        span {
+          width: 100%;
+        }
+        img {
+          width: 60px;
+          height: 60px;
+          // width: 100%;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
 
       .LoginInputContainer {
         display: flex;

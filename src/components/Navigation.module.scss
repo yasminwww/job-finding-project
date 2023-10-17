@@ -1,32 +1,33 @@
 @import "../App.scss";
-
+@mixin NavItems {
+  display: flex;
+  list-style-type: none;
+  font-weight: 900;
+  align-items: center;
+  cursor: pointer;
+}
 .NavContainer {
   display: flex;
   justify-content: space-between;
   padding: 24px 50px 24px 50px;
   align-items: center;
   background-color: $sand;
-
-  @mixin NavItems {
-    display: flex;
-    list-style-type: none;
-    font-weight: 900;
-    align-items: center;
-    cursor: pointer;
-  }
-
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
   .NavIcon {
     @include NavItems;
     gap: 16px;
   }
-
   .NavLinks {
     @include NavItems;
     gap: 38px;
-
     a {
+      color: $dark-color;
+      text-decoration: none;
       transition: all 0.2s ease-in-out;
-
       &:hover {
         filter: brightness(3);
       }

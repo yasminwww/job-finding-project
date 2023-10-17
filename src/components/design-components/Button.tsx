@@ -11,7 +11,6 @@ type ButtonProps = {
 };
 
 const Button = ({ label, icon, mt, mb, dark, onClick }: ButtonProps) => {
-  console.log("dark: ", dark);
   const buttonStyle = {
     marginTop: mt,
     marginBottom: mb,

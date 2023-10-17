@@ -9,6 +9,7 @@ interface TextProps {
   bold?: boolean;
   thin?: boolean;
   italic?: boolean;
+  longLine?: boolean;
 }
 
 const Text: FC<TextProps> = ({
@@ -16,6 +17,7 @@ const Text: FC<TextProps> = ({
   size = "medium",
   type = "p",
   thin = false,
+  longLine = false,
   bold = false,
   italic = false,
 }: TextProps) => {
@@ -40,6 +42,7 @@ const Text: FC<TextProps> = ({
   const textStyle: React.CSSProperties = {
     fontWeight: bold ? "bold" : thin ? 300 : "normal",
     fontStyle: italic ? "italic" : "normal",
+    lineHeight: longLine ? "26px" : "",
     fontSize,
     margin: "8px 0",
     color: "#03221b",

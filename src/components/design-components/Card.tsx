@@ -11,7 +11,7 @@ interface CardProps {
 
 const Card = ({ data, row }: CardProps) => {
   return (
-    <div className={row ? styles.CategoryRow : styles.Category}>
+    <div className={row ? styles.CardRow : styles.Card}>
       {!row && <IconBubble icon={data.icon} />}
       <div>
         <Text text={data.title} bold size={row ? "small" : "medium"} />

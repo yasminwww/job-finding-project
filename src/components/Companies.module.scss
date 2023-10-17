@@ -1,0 +1,34 @@
+.CompaniesContainer {
+  max-width: 900px;
+  height: 400px;
+
+  .CompaniesHeadline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 42px;
+    .CompaniesFirstSection {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      img {
+        max-height: 36px;
+      }
+    }
+  }
+  .Companies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px;
+
+    .Company {
+      padding: 2px;
+      position: relative;
+      img {
+        height: 30px;
+        object-fit: cover;
+      }
+    }
+  }
+}

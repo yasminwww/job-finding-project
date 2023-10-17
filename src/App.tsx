@@ -11,22 +11,20 @@ import PromotionSection from "./components/PromotionSection";
 function App() {
   return (
     <>
-      <div>
-        <Navigation />
-        <div className="main-content">
-          <Hero />
-          <div className="content">
-            <JobCategories />
-            <AppSection />
-            <div className="actions-section">
-              <ActionsContainer />
-              <LoginContainer />
-            </div>
+      <Navigation />
+      <main className="main-content">
+        <Hero />
+        <div className="content">
+          <JobCategories />
+          <AppSection />
+          <div className="actions-section" id="resources">
+            <ActionsContainer />
+            <LoginContainer />
           </div>
         </div>
-        <PromotionSection />
-        <Footer />
-      </div>
+      </main>
+      <PromotionSection />
+      <Footer />
     </>
   );
 }

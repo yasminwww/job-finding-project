@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./FooterCard.module.scss";
-import Text from "./shared/Text";
+import Text from "./design-components/Text";
 
 interface FooterCardProps {
   title: string;

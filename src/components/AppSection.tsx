@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./AppSection.module.scss";
 import notifications from "../assets/images/notifications.png";
-import Text from "./shared/Text";
-import Button from "./shared/Button";
+import Text from "./design-components/Text";
+import Button from "./design-components/Button";
 
 const AppSection = () => {
   return (
@@ -15,12 +15,11 @@ const AppSection = () => {
         />
       </div>
       <div className={styles.AppSectionInfo}>
+        <Text text="GET YOUR JOB TODAY FIND THE JOBS YOU LOVE" type="h2" bold />
         <Text
-          text="GET YOUR JOB TODAY FIND THE JOBS YOU LOVE"
-          type="h2"
-          bold
+          text="Finding a job should not be a full-time endeavor. Tell us what you're searching for, and we'll find you a job. This is the new way to find a job that suit you. Find a job you love. Research the fastest-growing companies."
+          longLine
         />
-        <Text text="Finding a job should not be a full-time endeavor. Tell us what you're searching for, and we'll find you a job. This is the new way to find a job that suit you. Find a job you love. Research the fastest-growing companies." />
         <Button label="Apply Now" onClick={() => {}} mt={18} />
       </div>
     </div>

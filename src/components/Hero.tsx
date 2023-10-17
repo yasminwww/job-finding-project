@@ -1,6 +1,7 @@
 import * as React from "react";
 import SearchInput from "./SearchInput";
 import styles from "./Hero.module.scss";
+import Text from "./design-components/Text";
 
 const Hero = () => {
   return (
@@ -10,10 +11,11 @@ const Hero = () => {
         <h1>TO CHOOSE YOUR NEW JOB</h1>
       </section>
       <section className={styles.HeroSubText}>
-        <p>
-          Hire and manage talent globally with automated contract and payroll
-        </p>
-        <p>100% compliance guaranteed.</p>
+        <Text
+          text="Hire and manage talent globally with automated contract and payroll"
+          longLine
+        />
+        <Text text="100% compliance guaranteed." longLine />
       </section>
       <SearchInput />
     </div>

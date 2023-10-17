@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import RemoveRedEyeRoundedIcon from "@mui/icons-material/RemoveRedEyeRounded";
 import styles from "./LoginContainer.module.scss";
-import Text from "./shared/Text";
-import Button from "./shared/Button";
-import Toggle from "./shared/Toggle";
+import Text from "./design-components/Text";
+import Button from "./design-components/Button";
+import Toggle from "./design-components/Toggle";
 
 const LoginContainer = () => {
   const [seePassword, setSeePassword] = useState(false);

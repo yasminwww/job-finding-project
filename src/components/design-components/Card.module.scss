@@ -1,6 +1,7 @@
 @import "../../App.scss";
 
-.Category {
+.Card {
+  flex: 1;
   padding: 16px;
   border: 2px solid $dark-color;
   border-radius: 6px;
@@ -33,6 +34,6 @@
     cursor: pointer;
   }
 }
-.CategoryRow:not(:first-child) {
+.CardRow:not(:first-child) {
   margin-top: 8px;
 }

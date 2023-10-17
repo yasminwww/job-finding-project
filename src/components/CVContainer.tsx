@@ -1,9 +1,9 @@
 import React from "react";
 import FileUploadRoundedIcon from "@mui/icons-material/FileUploadRounded";
 import styles from "./CVContainer.module.scss";
-import Button from "./shared/Button";
+import Button from "./design-components/Button";
 import CVImage from "../assets/images/profile.png";
-import Text from "./shared/Text";
+import Text from "./design-components/Text";
 
 const CVContainer = () => {
   return (

@@ -3,7 +3,7 @@
 .SearchInputContainer {
   padding: 8px;
   border: 1px solid $light-color;
-  max-width: 442px;
+  max-width: 482px;
   border-radius: 6px;
   margin: 32px auto;
   background-color: $white;
@@ -16,6 +16,16 @@
     align-items: center;
     gap: 16px;
     .SearchInputItem {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      i {
+        color: #858585;
+        font-size: 16px;
+        margin-right: 8px;
+      }
+
       .Input {
         border-color: $white !important;
         border-style: none;
@@ -23,9 +33,27 @@
         width: 100%;
         font-size: 16px;
         outline: none;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
         &:focus {
           border-color: $white !important;
         }
+        &::placeholder {
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          width: 100%; /* Adjust the width as needed */
+          color: #999; /* Placeholder text color */
+        }
+      }
+      .Separator {
+        height: 32px;
+        background-color: #a2a1a1;
+        width: 1px;
+        margin-left: 8px;
+        margin-right: 20px;
       }
     }
   }

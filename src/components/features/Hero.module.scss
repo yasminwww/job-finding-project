@@ -6,7 +6,18 @@
   background-color: $sand;
   margin-top: 120px;
   .HeroText {
+    display: flex;
+    flex-direction: column;
     font-size: 32px;
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .BestMove {
+      height: 42px;
+    }
   }
   .HeroText,
   .HeroSubText {

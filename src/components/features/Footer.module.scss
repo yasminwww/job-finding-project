@@ -1,23 +1,85 @@
 @import "../../App.scss";
 
 .FooterContainer {
-  padding: 38px 80px 28px 80px;
+  padding: 56px 80px 28px 80px;
+  background-color: $dark-color;
+
   .FooterCards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-gap: 16px;
-    place-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 16px;
+
+    .FooterCard {
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        color: $white !important;
+      }
+
+      .FooterLabel {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      .CompanyLogo {
+        height: 34px;
+        width: 180px;
+        margin-bottom: 22px;
+      }
+      button {
+        margin-top: 22px;
+        max-width: 36px;
+        padding: 22px 24px;
+      }
+      .FooterLinks {
+        text-decoration: none;
+        color: $white;
+        font-size: 16px;
+      }
+    }
+  }
+  .Separator {
+    height: 1px;
+    width: 100%;
+    background-color: #425a56;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  .FooterLegal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      color: $white !important;
+    }
+    .Legal {
+      display: flex;
+      align-items: center;
+      a {
+        padding-left: 24px;
+        padding-right: 24px;
+        text-decoration: none;
+        color: $white;
+      }
+      a:nth-of-type(2) {
+        border-left: solid 1px $white;
+        border-right: solid 1px $white;
+        color: $green;
+      }
+    }
   }
 }
 
-// @media (min-width: 600px) {
-//   .FooterCards {
-//     grid-template-columns: repeat(2, 1fr);
-//   }
-// }
+@media (max-width: 600px) {
+  .FooterCards {
+    flex-direction: column;
+  }
+}
 
-// @media (min-width: 900px) {
-//   .cards {
-//     grid-template-columns: repeat(3, 1fr);
-//   }
-// }
+@media (max-width: 900px) {
+  .FooterCards {
+    flex-direction: column;
+  }
+}

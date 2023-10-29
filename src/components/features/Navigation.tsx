@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Navigation.module.scss";
 import Button from "../design-components/Button";
+import companyLogo from "../../assets/images/c-logo.png";
+import Text from "../design-components/Text";
 
 const Navigation = () => {
   const [, setScrollPosition] = useState(0);
@@ -37,13 +39,8 @@ const Navigation = () => {
   return (
     <nav className={styles.NavContainer}>
       <figure className={styles.NavIcon} onClick={goToTop}>
-        <img
-          width="48"
-          height="48"
-          src="https://img.icons8.com/color/48/000000/query-inner-join.png"
-          alt="query-inner-join"
-        />
-        <div>Ramason</div>
+        <img width="48" height="48" src={companyLogo} alt="query-inner-join" />
+        <Text text="Ramason" size="medium" bold />
       </figure>
       <div className={styles.NavLinks}>
         <a href="#home" onClick={goToTop}>

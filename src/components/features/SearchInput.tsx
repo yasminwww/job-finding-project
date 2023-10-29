@@ -4,18 +4,32 @@ import Button from "../design-components/Button";
 
 const SearchInput = () => {
   return (
-    <div className={styles.SearchInputContainer}>
+    <form className={styles.SearchFormContainer}>
       <div className={styles.SearchInputItems}>
         <div className={styles.SearchInputItem}>
-          <i className="fa fa-search" aria-hidden="true"></i>
-          <input className={styles.Input} placeholder="Job title or keyword" />
-          <div className={styles.Separator} />
-          <i className="fa fa-map-marker" aria-hidden="true"></i>
-          <input className={styles.Input} placeholder=" Location" />
+          <label htmlFor="jobTitle">
+            <i className="fa fa-search" aria-hidden="true"></i>
+          </label>
+          <input
+            id="jobTitle"
+            className={styles.Input}
+            placeholder="Job title or keyword"
+          />
+        </div>
+        <div className={styles.Separator} />
+        <div className={styles.SearchInputItem}>
+          <label htmlFor="location">
+            <i className="fa fa-map-marker" aria-hidden="true"></i>
+          </label>
+          <input
+            id="location"
+            className={styles.Input}
+            placeholder="Location"
+          />
         </div>
         <Button label="Search" onClick={() => {}} />
       </div>
-    </div>
+    </form>
   );
 };
 

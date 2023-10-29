@@ -13,7 +13,7 @@ const CVContainer = () => {
       </div>
       <div className={styles.CVUpload}>
         <Text
-          text="GET MACTHED WITH THE MOST VAUABLE JOBS, JUST ROP YOUR CV AT RAMSON"
+          text="GET MACTHED WITH THE MOST VAUABLE JOBS, JUST ROP YOUR CV AT RAMASON"
           type="h3"
           bold
         />

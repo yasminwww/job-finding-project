@@ -8,7 +8,7 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
-  padding: 2px 16px;
+  padding: 4px 16px;
   height: 38px;
   min-width: 96px;
   min-height: 38px;
@@ -20,6 +20,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
+  white-space: nowrap;
 
   &:hover {
     filter: brightness(1.1);
